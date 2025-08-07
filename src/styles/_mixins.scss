@@ -1,0 +1,53 @@
+@use './variables';
+
+//Responsive mixin
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == small {
+        @media (max-width: 576px) { @content; }
+    }
+    @else if $breakpoint == medium {
+        @media (max-width: 768px) { @content; }
+    }
+    @else if $breakpoint == large {
+        @media (max-width: 992px) { @content; }
+    }
+}
+
+@mixin flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin base-button($bg-color , $text-color, $hover, $hover_effect, $padding : 0.5rem 1rem) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: $padding;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    @if $hover != null {
+        @if $hover == text_color {
+            &:hover {
+                color: $hover_effect;
+            }
+        }
+        @else if $hover == button_opacity {
+            &:hover {
+                filter: brightness($hover_effect)
+            }
+        }
+    }
+}
+
+@mixin base-text($text-color, $font_size) {
+    color: $text_color;
+    font-size: $font_size;
+}
+
+@mixin base-button-img($width : 50px) {
+    width: $width;
+    object-fit: cover;
+}
+

@@ -1,0 +1,36 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.footer {
+    height: 10rem;
+
+    background-color: $main_color;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+
+    &__links {
+        @include flex-center();
+        @include base-text($text_color, $font_size_md);
+        gap: 10px;
+    }
+
+    &__copy {
+        color: $text_color;
+    }
+
+}
+
+.footer__social-btn {
+    @include base-button($bg_color, $text_color, button_opacity, 80%, 0.5rem);    
+    @include flex-center();
+
+    border-radius: 50%;
+
+    img {
+        @include base-button-img(25px);
+    }
+}

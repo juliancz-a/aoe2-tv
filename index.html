@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AoE TV</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__main">
+      <span class="navbar__title">AoE.tv</span>
+      <img class="navbar__logo" src="./img/aoe-tv-logo2.svg" alt="AoE_tv_logo" srcset="">
+    </div>
+    <div class="navbar__buttons">
+      <a href="" class="navbar__item">Destacados</a>
+        <a href="/players/" class="navbar__item">Jugadores</a>
+        <a href="" class="navbar__item">Casters</a>
+        <a href="" class="navbar__item">Noticias</a>
+      </div>
+    </nav>
+  
+  <!-- Main header -->
+  <header class="header">
+    <div class="header__content">
+        <article class="header__text">
+          <p class="header__pre-title">Bienvenido a</p>
+          <h2 class="header__title">Age Of Empires TV</h2>
+          <p class="header__description">
+              Descubre la última información sobre el RTS más popular del mundo
+          </p>
+          <a href="#transmisions" class="cta">Explorar</a>
+        </article>
+
+        <figure class="header__image">
+          <img src="./img/aoe-tv-logo2.svg" alt="aoe_Tv_logo"/>
+        </figure>
+    </div>
+  </header>
+
+  <div id="transmisions" class="section-header">
+    <img class="section-header__image" src="./img/aoe2-header.webp" alt="" srcset="">
+    <div class="section-header__overlay"></div>
+    <p class="section-header__title">Transmisiones en vivo</p>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Sidebar -->
+    <section class="sidebar">
+      <!-- Search input -->
+      <div class="sidebar__search">
+        <input required="" type="text" name="text" autocomplete="off" class="sidebar__search-input">
+        <label class="sidebar__search-label">Buscar transmisiones</label>
+      </div>
+
+      <!-- Filters input -->
+        <span class="sidebar__label">Filtrar</span>
+        <!-- Filter-Group: Plataform -->
+        <div class="sidebar__radio-group">
+          <span class="sidebar__label">Plataforma</span>
+
+          <input type="radio" id="platform-all" name="platform" class="sidebar__radio" checked>
+          <label for="platform-all" class="sidebar__radio-label">
+            <span class="sidebar__radio-circle"></span>
+            <img src="./img/stream-logo.svg" alt="All-platforms" srcset="">
+            Todas 
+          </label>
+
+          <input type="radio" id="platform-yt" name="platform" class="sidebar__radio">
+          <label for="platform-yt" class="sidebar__radio-label">
+            <span class="sidebar__radio-circle"></span>
+            <img src="./img/youtube-logo.svg" alt="Youtube">
+            YouTube 
+          </label>
+
+          <input type="radio" id="platform-twitch" name="platform" class="sidebar__radio">
+          <label for="platform-twitch" class="sidebar__radio-label">
+            <span class="sidebar__radio-circle"></span>
+            <img src="./img/twitch-logo.svg" alt="Twitch">
+            Twitch
+          </label>
+
+          <input type="radio" id="platform-kick" name="platform" class="sidebar__radio">
+          <label for="platform-kick" class="sidebar__radio-label">
+            <span class="sidebar__radio-circle"></span>
+            <img src="./img/kick-logo.svg" alt="Kick">
+            Kick
+          </label>
+        </div>
+
+        <!-- Filter-Group: Language -->
+        <div class="sidebar__radio-group">
+          <span class="sidebar__label">Idioma</span>
+
+          <input type="radio" id="lang-all" name="language" class="sidebar__radio" checked>
+          <label for="lang-all" class="sidebar__radio-label">
+            <span class="sidebar__radio-circle"></span>
+            <img src="./img/worldwide-logo.svg" alt="Worldwide" srcset="">
+            Todos
+          </label>
+
+          <input type="radio" id="lang-es" name="language" class="sidebar__radio">
+          <label for="lang-es" class="sidebar__radio-label">
+            <span class="sidebar__radio-circle"></span>
+            <span class="fi fi-es"></span>
+            Español
+          </label>
+
+          <input type="radio" id="lang-en" name="language" class="sidebar__radio">
+          <label for="lang-en" class="sidebar__radio-label">
+            <span class="sidebar__radio-circle"></span>
+            <span class="fi fi-us"></span>
+            Inglés
+          </label>
+        </div>
+
+
+      <!-- Order by input -->
+      <div class="sidebar__select">
+        <span class="sidebar__label">Ordenar por</span>
+        <div class="sidebar__dropdown">
+
+          <div class="sidebar__dropdown-select">
+            <span></span>
+          </div>
+          <input type="hidden" name="opt">
+
+          <ul class="sidebar__dropdown-menu">
+            <li id="viewers" data-default>Viewers</li>
+            <li id="nombre">Nombre</li>
+          </ul>
+
+      </div>
+    </section>
+
+    <!-- Main Grid -->
+    <section class="grid">
+
+
+      <div class="card">
+          <div class="card__header">
+            <img class="card__image" src="./img/locoser.png" alt="Oco Oco" srcset="">
+          </div>
+
+          <div class="card__body">
+            <div class="card__info">
+              <p class="card__name">LocoSer</p>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, delectus.</p>
+            </div>
+            <div class="card__channels">
+              <div class="card__channel">
+                <button id="kick-btn" class="card__channel-btn">
+                    <img src="./img/kick-logo.svg" alt="Kick" srcset="">
+                </button>
+                <p class="card__viewers">1050</p>
+              </div>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__socials">
+              <button class="card__social-btn">
+                <img src="./img/discord-logo.svg" alt="Discord" srcset="">
+              </button>
+              <button class="card__social-btn">
+                  <img src="./img/ig-logo.svg" alt="Instagram" srcset="">
+              </button>
+              <button class="card__social-btn">
+                <img src="./img/x-logo.svg" alt="X" srcset="">
+              </button>
+            </div>
+            <span class="fi fi-es"></span>
+          </div>
+        </div>
+      
+      <div class="card">
+          <div class="card__header">
+            <img class="card__image" src="./img/locoser.png" alt="Oco Oco" srcset="">
+          </div>
+
+          <div class="card__body">
+            <div class="card__info">
+              <p class="card__name">LocoSer</p>
+              <p class="card__desc">lorem50</p>
+            </div>
+            <div class="card__channels">
+              <div class="card__channel">
+                <button id="yt-btn" class="card__channel-btn">
+                    <img src="./img/youtube-logo.svg" alt="Youtube" srcset="">
+                </button>
+                <p class="card__viewers">1050</p>
+              </div>
+              <div class="card__channel">
+                <button id="kick-btn" class="card__channel-btn">
+                    <img src="./img/kick-logo.svg" alt="Kick" srcset="">
+                </button>
+                <p class="card__viewers">1050</p>
+              </div>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__socials">
+              <button class="card__social-btn">
+                <img src="./img/discord-logo.svg" alt="Discord" srcset="">
+              </button>
+              <button class="card__social-btn">
+                  <img src="./img/ig-logo.svg" alt="Instagram" srcset="">
+              </button>
+              <button class="card__social-btn">
+                <img src="./img/x-logo.svg" alt="X" srcset="">
+              </button>
+            </div>
+            <span class="fi fi-es"></span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img class="card__image" src="./img/locoser.png" alt="Oco Oco" srcset="">
+          </div>
+
+          <div class="card__body">
+            <div class="card__info">
+              <p class="card__name">LocoSer</p>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, delectus.</p>
+            </div>
+            <div class="card__channels">
+              <div class="card__channel">
+                <button id="yt-btn" class="card__channel-btn">
+                    <img src="./img/youtube-logo.svg" alt="Youtube" srcset="">
+                </button>
+                <p class="card__viewers">1050</p>
+              </div>
+              <div class="card__channel">
+                <button id="kick-btn" class="card__channel-btn">
+                    <img src="./img/kick-logo.svg" alt="Kick" srcset="">
+                </button>
+                <p class="card__viewers">1050</p>
+              </div>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__socials">
+              <button class="card__social-btn">
+                <img src="./img/discord-logo.svg" alt="Discord" srcset="">
+              </button>
+              <button class="card__social-btn">
+                  <img src="./img/ig-logo.svg" alt="Instagram" srcset="">
+              </button>
+              <button class="card__social-btn">
+                <img src="./img/x-logo.svg" alt="X" srcset="">
+              </button>
+            </div>
+            <span class="fi fi-es"></span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            <img class="card__image" src="./img/locoser.png" alt="Oco Oco" srcset="">
+          </div>
+
+          <div class="card__body">
+            <div class="card__info">
+              <p class="card__name">LocoSer</p>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, delectus.</p>
+            </div>
+            <div class="card__channels">
+              <div class="card__channel">
+                <button id="yt-btn" class="card__channel-btn">
+                    <img src="./img/youtube-logo.svg" alt="Youtube" srcset="">
+                </button>
+                <p class="card__viewers">1050</p>
+              </div>
+              <div class="card__channel">
+                <button id="kick-btn" class="card__channel-btn">
+                    <img src="./img/kick-logo.svg" alt="Kick" srcset="">
+                </button>
+                <p class="card__viewers">1050</p>
+              </div>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__socials">
+              <button class="card__social-btn">
+                <img src="./img/discord-logo.svg" alt="Discord" srcset="">
+              </button>
+              <button class="card__social-btn">
+                  <img src="./img/ig-logo.svg" alt="Instagram" srcset="">
+              </button>
+              <button class="card__social-btn">
+                <img src="./img/x-logo.svg" alt="X" srcset="">
+              </button>
+            </div>
+          </div>
+        </div>
+         <div class="card">
+          <div class="card__header">
+            <img class="card__image" src="./img/locoser.png" alt="Oco Oco" srcset="">
+          </div>
+
+          <div class="card__body">
+            <div class="card__info">
+              <p class="card__name">LocoSer</p>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, delectus.</p>
+            </div>
+            <div class="card__channels">
+              <div class="card__channel">
+                <button id="yt-btn" class="card__channel-btn">
+                    <img src="./img/youtube-logo.svg" alt="Youtube" srcset="">
+                </button>
+                <p class="card__viewers">1050</p>
+              </div>
+              <div class="card__channel">
+                <button id="kick-btn" class="card__channel-btn">
+                    <img src="./img/kick-logo.svg" alt="Kick" srcset="">
+                </button>
+                <p class="card__viewers">1050</p>
+              </div>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__socials">
+              <button class="card__social-btn">
+                <img src="./img/discord-logo.svg" alt="Discord" srcset="">
+              </button>
+              <button class="card__social-btn">
+                  <img src="./img/ig-logo.svg" alt="Instagram" srcset="">
+              </button>
+              <button class="card__social-btn">
+                <img src="./img/x-logo.svg" alt="X" srcset="">
+              </button>
+            </div>
+            <div class="card__metrics"></div>
+          </div>
+        </div>
+          <div class="card">
+          <div class="card__header">
+            <img class="card__image" src="./img/locoser.png" alt="Oco Oco" srcset="">
+          </div>
+
+          <div class="card__body">
+            <div class="card__info">
+              <p class="card__name">LocoSer</p>
+              <p class="card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, delectus.</p>
+            </div>
+            <div class="card__channels">
+              <div class="card__channel">
+                <button id="yt-btn" class="card__channel-btn">
+                    <img src="./img/youtube-logo.svg" alt="Youtube" srcset="">
+                </button>
+                <p class="card__viewers">1050</p>
+              </div>
+              <div class="card__channel">
+                <button id="kick-btn" class="card__channel-btn">
+                    <img src="./img/kick-logo.svg" alt="Kick" srcset="">
+                </button>
+                <p class="card__viewers">1050</p>
+              </div>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__socials">
+              <button class="card__social-btn">
+                <img src="./img/discord-logo.svg" alt="Discord" srcset="">
+              </button>
+              <button class="card__social-btn">
+                  <img src="./img/ig-logo.svg" alt="Instagram" srcset="">
+              </button>
+              <button class="card__social-btn">
+                <img src="./img/x-logo.svg" alt="X" srcset="">
+              </button>
+            </div>
+            <div class="card__metrics"></div>
+          </div>
+        </div>
+      
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <section class="footer__copy"><p>&copy; 2025 Julián Caceres. LICENSE MIT</p></section>
+    <section class="footer__links">
+      <p>Sigueme en</p>
+      <a class="footer__social-btn" href="https://github.com/juliancz-a" target="_blank"><img src="./img/github-logo.svg" alt="Follow me on Github" srcset=""></a>
+      <a class="footer__social-btn" href="https://instagram.com/juliianc_" target="_blank"><img src="./img/ig-logo.svg" alt="Follow me on Instagram" srcset=""></a>
+    </section>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+// Colors
+
+$main_color : #1b2a41;
+$secondary_color : #324a5f;
+$accent_color : #d3e7fd;
+$bg_color : #8397b6;
+$bg_light_color : #afc1dd;
+$secondary_bg_color : #e8eaec;
+
+$text_color : #e3ebf3;
+$hover_color : #eea857;
+
+$button_hover_color : #3e5c75;
+
+$yt_btn_color : #d01717;
+$kick_btn_color : #2ac92a;
+$twitch_btn_color: #ae3fc9;
+
+
+$gradient-02: linear-gradient(135deg, $accent_color 0%, $bg_color 100%);
+$gradient-01: linear-gradient(to top, $main_color 0%, $secondary_color 100%);
+
+
+// Font sizes
+
+$font_size_s : 0.75rem;
+$font_size_md : 1rem;
+$font_size : 1.25rem;
+$font_size_lg : 2rem;
+$font_size_xl : 2.5rem;
+
+// Padding
+
+$p-main: 1rem;
